@@ -9,7 +9,7 @@ import { Router, Route, browserHistory, IndexRoute } from 'react-router'
 import App from './App'  
 import Login from './login'  
 import Signup from './signup'  
-import Widgets from './widgets'  
+import Twitter from './components/twitter/index'; 
 import BodyContainer from './components/BodyContainer'
 import './index.css'
 
@@ -48,6 +48,7 @@ ReactDOM.render(
           <Route path="/signup" component={Signup} />
           <Route onEnter={checkWidgetAuthorization(store)} path="/widgets" component={BodyContainer} >
             <Route path="/posts" components={{allposts : PostForm}}/>
+            <Route path="/twitter" components={{twitter: Twitter}}/>
           </Route>
         </Route>
       </Router>

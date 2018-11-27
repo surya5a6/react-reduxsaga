@@ -7,7 +7,6 @@ const initialState = {
 const reducer = ( state = [], action) => {
     switch(action.type){
         case ADD_POST :
-           console.log("reducer")
            return state.concat([action.data])
         case DELETE :
            return state.filter(post => post.id != action.id )

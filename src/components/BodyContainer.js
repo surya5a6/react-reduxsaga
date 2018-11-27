@@ -12,7 +12,9 @@ const SubMenu = Menu.subMenu
 
 export default class Widgets extends Component {
     render () {
-      const { allposts} = this.props
+      
+      const { allposts, twitter } = this.props
+      
         return (
            <Layout style={{ minHeight: '100vh' }}>
                 <Header>
@@ -39,6 +41,7 @@ export default class Widgets extends Component {
                             <Content style={{ margin: '0 16px',marginTop:"10px" }}>
                                 <div style={{ padding: 24, background: '#fff', minHeight: 360 }}>
                                 {allposts}
+                                {twitter}
                                 </div>
                             </Content>
                             <Footer style={{ textAlign: 'center' }}>
