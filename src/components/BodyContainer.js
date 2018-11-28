@@ -45,7 +45,7 @@ export default class Widgets extends Component {
                                 </div>
                             </Content>
                             <Footer style={{ textAlign: 'center' }}>
-                            Ant Design ©2018 Created by Ant UED
+                             React App © 2018 Created by Black Horse
                             </Footer>
                     </Layout>
                 </Layout>
